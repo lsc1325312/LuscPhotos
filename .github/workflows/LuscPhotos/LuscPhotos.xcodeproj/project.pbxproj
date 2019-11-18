@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1419AE1F2151DEBB00EDBA6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419AE1E2151DEBB00EDBA6B /* AppDelegate.m */; };
+		1419AE222151DEBB00EDBA6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419AE212151DEBB00EDBA6B /* ViewController.m */; };
+		1419AE272151DEBC00EDBA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1419AE262151DEBC00EDBA6B /* Assets.xcassets */; };
+		1419AE2D2151DEBC00EDBA6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419AE2C2151DEBC00EDBA6B /* main.m */; };
+		1419AE372151DEBC00EDBA6B /* LuscPhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419AE362151DEBC00EDBA6B /* LuscPhotosTests.m */; };
+		1419AE422151DEBC00EDBA6B /* LuscPhotosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419AE412151DEBC00EDBA6B /* LuscPhotosUITests.m */; };
+		1419AE522151FAFF00EDBA6B /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1419AE512151FAFF00EDBA6B /* Photos.framework */; };
+		1419AE552151FB3E00EDBA6B /* LUSCPhotoGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419AE542151FB3E00EDBA6B /* LUSCPhotoGroup.m */; };
+		1419AE582151FB6E00EDBA6B /* LUSCPhotoManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419AE572151FB6E00EDBA6B /* LUSCPhotoManage.m */; };
+		1419AE5B2151FE4500EDBA6B /* LUSCPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419AE5A2151FE4500EDBA6B /* LUSCPhotos.m */; };
+		1419AE5E2152284700EDBA6B /* LUSCPhotoGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419AE5D2152284700EDBA6B /* LUSCPhotoGroupModel.m */; };
+		1419AE612152286100EDBA6B /* LUSCPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419AE602152286100EDBA6B /* LUSCPhotoModel.m */; };
+		142BC8962153361800F3CB29 /* PHCachingImageManager+LUSCShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BC8952153361800F3CB29 /* PHCachingImageManager+LUSCShareManager.m */; };
+		142BC89B2153792400F3CB29 /* LUSCPhotoGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BC89A2153792400F3CB29 /* LUSCPhotoGroupViewController.m */; };
+		142BC89E2153793D00F3CB29 /* LUSCPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BC89D2153793D00F3CB29 /* LUSCPhotosViewController.m */; };
+		142BC8A121538B6A00F3CB29 /* LUSCPhotoGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BC8A021538B6A00F3CB29 /* LUSCPhotoGroupTableViewCell.m */; };
+		142BC8A421539B3C00F3CB29 /* LUSCPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BC8A321539B3C00F3CB29 /* LUSCPhotoCollectionViewCell.m */; };
+		142F7D0E215C86BC002BAA6F /* UIImage+LUSCColorTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 142F7D0D215C86BC002BAA6F /* UIImage+LUSCColorTransformation.m */; };
+		142F7D12215CC5B0002BAA6F /* LUSCPreviewImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142F7D11215CC5B0002BAA6F /* LUSCPreviewImageViewController.m */; };
+		1433C0932154C77400242959 /* LUSCPhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1433C0922154C77400242959 /* LUSCPhotosManager.m */; };
+		144DC75D215E01A500945C0D /* LUSCPreviewImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144DC75C215E01A500945C0D /* LUSCPreviewImageView.m */; };
+		144DC764215F531900945C0D /* LUSCPreviewImageTeamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144DC763215F531900945C0D /* LUSCPreviewImageTeamView.m */; };
+		144DC767215F597600945C0D /* LUSCPreviewImageTeamNarrowImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144DC766215F597600945C0D /* LUSCPreviewImageTeamNarrowImageView.m */; };
+		14576EC321706F650059D822 /* luscBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14576EC121706F650059D822 /* luscBack@2x.png */; };
+		14576EC421706F650059D822 /* luscBack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14576EC221706F650059D822 /* luscBack@3x.png */; };
+		14802114215B81F800B9749A /* UINavigationBar+LUSCNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14802113215B81F800B9749A /* UINavigationBar+LUSCNavigationBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1419AE332151DEBC00EDBA6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1419AE122151DEBB00EDBA6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1419AE192151DEBB00EDBA6B;
+			remoteInfo = LuscPhotos;
+		};
+		1419AE3E2151DEBC00EDBA6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1419AE122151DEBB00EDBA6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1419AE192151DEBB00EDBA6B;
+			remoteInfo = LuscPhotos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1419AE1A2151DEBB00EDBA6B /* LuscPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuscPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1419AE1D2151DEBB00EDBA6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1419AE1E2151DEBB00EDBA6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1419AE202151DEBB00EDBA6B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1419AE212151DEBB00EDBA6B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1419AE262151DEBC00EDBA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1419AE2B2151DEBC00EDBA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1419AE2C2151DEBC00EDBA6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1419AE322151DEBC00EDBA6B /* LuscPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuscPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1419AE362151DEBC00EDBA6B /* LuscPhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuscPhotosTests.m; sourceTree = "<group>"; };
+		1419AE382151DEBC00EDBA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1419AE3D2151DEBC00EDBA6B /* LuscPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuscPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1419AE412151DEBC00EDBA6B /* LuscPhotosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuscPhotosUITests.m; sourceTree = "<group>"; };
+		1419AE432151DEBC00EDBA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1419AE512151FAFF00EDBA6B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		1419AE532151FB3E00EDBA6B /* LUSCPhotoGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotoGroup.h; sourceTree = "<group>"; };
+		1419AE542151FB3E00EDBA6B /* LUSCPhotoGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPhotoGroup.m; sourceTree = "<group>"; };
+		1419AE562151FB6E00EDBA6B /* LUSCPhotoManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotoManage.h; sourceTree = "<group>"; };
+		1419AE572151FB6E00EDBA6B /* LUSCPhotoManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPhotoManage.m; sourceTree = "<group>"; };
+		1419AE592151FE4500EDBA6B /* LUSCPhotos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotos.h; sourceTree = "<group>"; };
+		1419AE5A2151FE4500EDBA6B /* LUSCPhotos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPhotos.m; sourceTree = "<group>"; };
+		1419AE5C2152284700EDBA6B /* LUSCPhotoGroupModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotoGroupModel.h; sourceTree = "<group>"; };
+		1419AE5D2152284700EDBA6B /* LUSCPhotoGroupModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPhotoGroupModel.m; sourceTree = "<group>"; };
+		1419AE5F2152286100EDBA6B /* LUSCPhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotoModel.h; sourceTree = "<group>"; };
+		1419AE602152286100EDBA6B /* LUSCPhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPhotoModel.m; sourceTree = "<group>"; };
+		142BC8942153361800F3CB29 /* PHCachingImageManager+LUSCShareManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHCachingImageManager+LUSCShareManager.h"; sourceTree = "<group>"; };
+		142BC8952153361800F3CB29 /* PHCachingImageManager+LUSCShareManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PHCachingImageManager+LUSCShareManager.m"; sourceTree = "<group>"; };
+		142BC89721534ADB00F3CB29 /* LUSCPhotoManageDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotoManageDelegate.h; sourceTree = "<group>"; };
+		142BC8992153792400F3CB29 /* LUSCPhotoGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotoGroupViewController.h; sourceTree = "<group>"; };
+		142BC89A2153792400F3CB29 /* LUSCPhotoGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPhotoGroupViewController.m; sourceTree = "<group>"; };
+		142BC89C2153793D00F3CB29 /* LUSCPhotosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotosViewController.h; sourceTree = "<group>"; };
+		142BC89D2153793D00F3CB29 /* LUSCPhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPhotosViewController.m; sourceTree = "<group>"; };
+		142BC89F21538B6A00F3CB29 /* LUSCPhotoGroupTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotoGroupTableViewCell.h; sourceTree = "<group>"; };
+		142BC8A021538B6A00F3CB29 /* LUSCPhotoGroupTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPhotoGroupTableViewCell.m; sourceTree = "<group>"; };
+		142BC8A221539B3C00F3CB29 /* LUSCPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		142BC8A321539B3C00F3CB29 /* LUSCPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		142F7D0C215C86BC002BAA6F /* UIImage+LUSCColorTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LUSCColorTransformation.h"; sourceTree = "<group>"; };
+		142F7D0D215C86BC002BAA6F /* UIImage+LUSCColorTransformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LUSCColorTransformation.m"; sourceTree = "<group>"; };
+		142F7D10215CC5B0002BAA6F /* LUSCPreviewImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPreviewImageViewController.h; sourceTree = "<group>"; };
+		142F7D11215CC5B0002BAA6F /* LUSCPreviewImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPreviewImageViewController.m; sourceTree = "<group>"; };
+		1433C0912154C77400242959 /* LUSCPhotosManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotosManager.h; sourceTree = "<group>"; };
+		1433C0922154C77400242959 /* LUSCPhotosManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPhotosManager.m; sourceTree = "<group>"; };
+		1433C0942154FD8200242959 /* LUSCPhotosManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPhotosManagerDelegate.h; sourceTree = "<group>"; };
+		144DC75B215E01A500945C0D /* LUSCPreviewImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPreviewImageView.h; sourceTree = "<group>"; };
+		144DC75C215E01A500945C0D /* LUSCPreviewImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPreviewImageView.m; sourceTree = "<group>"; };
+		144DC762215F531900945C0D /* LUSCPreviewImageTeamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUSCPreviewImageTeamView.h; sourceTree = "<group>"; };
+		144DC763215F531900945C0D /* LUSCPreviewImageTeamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LUSCPreviewImageTeamView.m; sourceTree = "<group>"; };
+		144DC765215F597600945C0D /* LUSCPreviewImageTeamNarrowImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUSCPreviewImageTeamNarrowImageView.h; sourceTree = "<group>"; };
+		144DC766215F597600945C0D /* LUSCPreviewImageTeamNarrowImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUSCPreviewImageTeamNarrowImageView.m; sourceTree = "<group>"; };
+		14576EC121706F650059D822 /* luscBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "luscBack@2x.png"; sourceTree = "<group>"; };
+		14576EC221706F650059D822 /* luscBack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "luscBack@3x.png"; sourceTree = "<group>"; };
+		14802112215B81F800B9749A /* UINavigationBar+LUSCNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+LUSCNavigationBar.h"; sourceTree = "<group>"; };
+		14802113215B81F800B9749A /* UINavigationBar+LUSCNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+LUSCNavigationBar.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1419AE172151DEBB00EDBA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1419AE522151FAFF00EDBA6B /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1419AE2F2151DEBC00EDBA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1419AE3A2151DEBC00EDBA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1419AE112151DEBB00EDBA6B = {
+			isa = PBXGroup;
+			children = (
+				1419AE1C2151DEBB00EDBA6B /* LuscPhotos */,
+				1419AE352151DEBC00EDBA6B /* LuscPhotosTests */,
+				1419AE402151DEBC00EDBA6B /* LuscPhotosUITests */,
+				1419AE1B2151DEBB00EDBA6B /* Products */,
+				1419AE502151FAFF00EDBA6B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1419AE1B2151DEBB00EDBA6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1419AE1A2151DEBB00EDBA6B /* LuscPhotos.app */,
+				1419AE322151DEBC00EDBA6B /* LuscPhotosTests.xctest */,
+				1419AE3D2151DEBC00EDBA6B /* LuscPhotosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1419AE1C2151DEBB00EDBA6B /* LuscPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				142F7D0F215CC2A1002BAA6F /* preview */,
+				142F7D0B215C86BC002BAA6F /* Image */,
+				14802111215B81B100B9749A /* nav */,
+				142BC89821536C2000F3CB29 /* photosView */,
+				1419AE4F2151F3C900EDBA6B /* photos */,
+				1419AE1D2151DEBB00EDBA6B /* AppDelegate.h */,
+				1419AE1E2151DEBB00EDBA6B /* AppDelegate.m */,
+				14576EC121706F650059D822 /* luscBack@2x.png */,
+				14576EC221706F650059D822 /* luscBack@3x.png */,
+				1419AE202151DEBB00EDBA6B /* ViewController.h */,
+				1419AE212151DEBB00EDBA6B /* ViewController.m */,
+				1419AE262151DEBC00EDBA6B /* Assets.xcassets */,
+				1419AE2B2151DEBC00EDBA6B /* Info.plist */,
+				1419AE2C2151DEBC00EDBA6B /* main.m */,
+			);
+			path = LuscPhotos;
+			sourceTree = "<group>";
+		};
+		1419AE352151DEBC00EDBA6B /* LuscPhotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				1419AE362151DEBC00EDBA6B /* LuscPhotosTests.m */,
+				1419AE382151DEBC00EDBA6B /* Info.plist */,
+			);
+			path = LuscPhotosTests;
+			sourceTree = "<group>";
+		};
+		1419AE402151DEBC00EDBA6B /* LuscPhotosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1419AE412151DEBC00EDBA6B /* LuscPhotosUITests.m */,
+				1419AE432151DEBC00EDBA6B /* Info.plist */,
+			);
+			path = LuscPhotosUITests;
+			sourceTree = "<group>";
+		};
+		1419AE4F2151F3C900EDBA6B /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				1419AE592151FE4500EDBA6B /* LUSCPhotos.h */,
+				1419AE5A2151FE4500EDBA6B /* LUSCPhotos.m */,
+				1419AE532151FB3E00EDBA6B /* LUSCPhotoGroup.h */,
+				1419AE542151FB3E00EDBA6B /* LUSCPhotoGroup.m */,
+				1419AE562151FB6E00EDBA6B /* LUSCPhotoManage.h */,
+				1419AE572151FB6E00EDBA6B /* LUSCPhotoManage.m */,
+				1419AE5C2152284700EDBA6B /* LUSCPhotoGroupModel.h */,
+				1419AE5D2152284700EDBA6B /* LUSCPhotoGroupModel.m */,
+				1419AE5F2152286100EDBA6B /* LUSCPhotoModel.h */,
+				1419AE602152286100EDBA6B /* LUSCPhotoModel.m */,
+				142BC8942153361800F3CB29 /* PHCachingImageManager+LUSCShareManager.h */,
+				142BC8952153361800F3CB29 /* PHCachingImageManager+LUSCShareManager.m */,
+				142BC89721534ADB00F3CB29 /* LUSCPhotoManageDelegate.h */,
+			);
+			path = photos;
+			sourceTree = "<group>";
+		};
+		1419AE502151FAFF00EDBA6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1419AE512151FAFF00EDBA6B /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		142BC89821536C2000F3CB29 /* photosView */ = {
+			isa = PBXGroup;
+			children = (
+				1433C0942154FD8200242959 /* LUSCPhotosManagerDelegate.h */,
+				1433C0912154C77400242959 /* LUSCPhotosManager.h */,
+				1433C0922154C77400242959 /* LUSCPhotosManager.m */,
+				142BC8992153792400F3CB29 /* LUSCPhotoGroupViewController.h */,
+				142BC89A2153792400F3CB29 /* LUSCPhotoGroupViewController.m */,
+				142BC89F21538B6A00F3CB29 /* LUSCPhotoGroupTableViewCell.h */,
+				142BC8A021538B6A00F3CB29 /* LUSCPhotoGroupTableViewCell.m */,
+				142BC89C2153793D00F3CB29 /* LUSCPhotosViewController.h */,
+				142BC89D2153793D00F3CB29 /* LUSCPhotosViewController.m */,
+				142BC8A221539B3C00F3CB29 /* LUSCPhotoCollectionViewCell.h */,
+				142BC8A321539B3C00F3CB29 /* LUSCPhotoCollectionViewCell.m */,
+			);
+			path = photosView;
+			sourceTree = "<group>";
+		};
+		142F7D0B215C86BC002BAA6F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				142F7D0C215C86BC002BAA6F /* UIImage+LUSCColorTransformation.h */,
+				142F7D0D215C86BC002BAA6F /* UIImage+LUSCColorTransformation.m */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		142F7D0F215CC2A1002BAA6F /* preview */ = {
+			isa = PBXGroup;
+			children = (
+				144DC761215F531900945C0D /* PreviewTeam */,
+				142F7D10215CC5B0002BAA6F /* LUSCPreviewImageViewController.h */,
+				142F7D11215CC5B0002BAA6F /* LUSCPreviewImageViewController.m */,
+				144DC75B215E01A500945C0D /* LUSCPreviewImageView.h */,
+				144DC75C215E01A500945C0D /* LUSCPreviewImageView.m */,
+			);
+			path = preview;
+			sourceTree = "<group>";
+		};
+		144DC761215F531900945C0D /* PreviewTeam */ = {
+			isa = PBXGroup;
+			children = (
+				144DC762215F531900945C0D /* LUSCPreviewImageTeamView.h */,
+				144DC763215F531900945C0D /* LUSCPreviewImageTeamView.m */,
+				144DC765215F597600945C0D /* LUSCPreviewImageTeamNarrowImageView.h */,
+				144DC766215F597600945C0D /* LUSCPreviewImageTeamNarrowImageView.m */,
+			);
+			path = PreviewTeam;
+			sourceTree = "<group>";
+		};
+		14802111215B81B100B9749A /* nav */ = {
+			isa = PBXGroup;
+			children = (
+				14802112215B81F800B9749A /* UINavigationBar+LUSCNavigationBar.h */,
+				14802113215B81F800B9749A /* UINavigationBar+LUSCNavigationBar.m */,
+			);
+			path = nav;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1419AE192151DEBB00EDBA6B /* LuscPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1419AE462151DEBC00EDBA6B /* Build configuration list for PBXNativeTarget "LuscPhotos" */;
+			buildPhases = (
+				1419AE162151DEBB00EDBA6B /* Sources */,
+				1419AE172151DEBB00EDBA6B /* Frameworks */,
+				1419AE182151DEBB00EDBA6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuscPhotos;
+			productName = LuscPhotos;
+			productReference = 1419AE1A2151DEBB00EDBA6B /* LuscPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1419AE312151DEBC00EDBA6B /* LuscPhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1419AE492151DEBC00EDBA6B /* Build configuration list for PBXNativeTarget "LuscPhotosTests" */;
+			buildPhases = (
+				1419AE2E2151DEBC00EDBA6B /* Sources */,
+				1419AE2F2151DEBC00EDBA6B /* Frameworks */,
+				1419AE302151DEBC00EDBA6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1419AE342151DEBC00EDBA6B /* PBXTargetDependency */,
+			);
+			name = LuscPhotosTests;
+			productName = LuscPhotosTests;
+			productReference = 1419AE322151DEBC00EDBA6B /* LuscPhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1419AE3C2151DEBC00EDBA6B /* LuscPhotosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1419AE4C2151DEBC00EDBA6B /* Build configuration list for PBXNativeTarget "LuscPhotosUITests" */;
+			buildPhases = (
+				1419AE392151DEBC00EDBA6B /* Sources */,
+				1419AE3A2151DEBC00EDBA6B /* Frameworks */,
+				1419AE3B2151DEBC00EDBA6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1419AE3F2151DEBC00EDBA6B /* PBXTargetDependency */,
+			);
+			name = LuscPhotosUITests;
+			productName = LuscPhotosUITests;
+			productReference = 1419AE3D2151DEBC00EDBA6B /* LuscPhotosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1419AE122151DEBB00EDBA6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = xy;
+				TargetAttributes = {
+					1419AE192151DEBB00EDBA6B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					1419AE312151DEBC00EDBA6B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1419AE192151DEBB00EDBA6B;
+					};
+					1419AE3C2151DEBC00EDBA6B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1419AE192151DEBB00EDBA6B;
+					};
+				};
+			};
+			buildConfigurationList = 1419AE152151DEBB00EDBA6B /* Build configuration list for PBXProject "LuscPhotos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1419AE112151DEBB00EDBA6B;
+			productRefGroup = 1419AE1B2151DEBB00EDBA6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1419AE192151DEBB00EDBA6B /* LuscPhotos */,
+				1419AE312151DEBC00EDBA6B /* LuscPhotosTests */,
+				1419AE3C2151DEBC00EDBA6B /* LuscPhotosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1419AE182151DEBB00EDBA6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14576EC321706F650059D822 /* luscBack@2x.png in Resources */,
+				14576EC421706F650059D822 /* luscBack@3x.png in Resources */,
+				1419AE272151DEBC00EDBA6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1419AE302151DEBC00EDBA6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1419AE3B2151DEBC00EDBA6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1419AE162151DEBB00EDBA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144DC764215F531900945C0D /* LUSCPreviewImageTeamView.m in Sources */,
+				1419AE222151DEBB00EDBA6B /* ViewController.m in Sources */,
+				144DC767215F597600945C0D /* LUSCPreviewImageTeamNarrowImageView.m in Sources */,
+				142BC8A421539B3C00F3CB29 /* LUSCPhotoCollectionViewCell.m in Sources */,
+				1419AE5B2151FE4500EDBA6B /* LUSCPhotos.m in Sources */,
+				1419AE5E2152284700EDBA6B /* LUSCPhotoGroupModel.m in Sources */,
+				142BC89E2153793D00F3CB29 /* LUSCPhotosViewController.m in Sources */,
+				142F7D12215CC5B0002BAA6F /* LUSCPreviewImageViewController.m in Sources */,
+				1419AE552151FB3E00EDBA6B /* LUSCPhotoGroup.m in Sources */,
+				142BC89B2153792400F3CB29 /* LUSCPhotoGroupViewController.m in Sources */,
+				1419AE582151FB6E00EDBA6B /* LUSCPhotoManage.m in Sources */,
+				14802114215B81F800B9749A /* UINavigationBar+LUSCNavigationBar.m in Sources */,
+				1419AE612152286100EDBA6B /* LUSCPhotoModel.m in Sources */,
+				1419AE2D2151DEBC00EDBA6B /* main.m in Sources */,
+				142BC8A121538B6A00F3CB29 /* LUSCPhotoGroupTableViewCell.m in Sources */,
+				142BC8962153361800F3CB29 /* PHCachingImageManager+LUSCShareManager.m in Sources */,
+				144DC75D215E01A500945C0D /* LUSCPreviewImageView.m in Sources */,
+				1419AE1F2151DEBB00EDBA6B /* AppDelegate.m in Sources */,
+				1433C0932154C77400242959 /* LUSCPhotosManager.m in Sources */,
+				142F7D0E215C86BC002BAA6F /* UIImage+LUSCColorTransformation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1419AE2E2151DEBC00EDBA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1419AE372151DEBC00EDBA6B /* LuscPhotosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1419AE392151DEBC00EDBA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1419AE422151DEBC00EDBA6B /* LuscPhotosUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1419AE342151DEBC00EDBA6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1419AE192151DEBB00EDBA6B /* LuscPhotos */;
+			targetProxy = 1419AE332151DEBC00EDBA6B /* PBXContainerItemProxy */;
+		};
+		1419AE3F2151DEBC00EDBA6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1419AE192151DEBB00EDBA6B /* LuscPhotos */;
+			targetProxy = 1419AE3E2151DEBC00EDBA6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1419AE442151DEBC00EDBA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1419AE452151DEBC00EDBA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1419AE472151DEBC00EDBA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYJ27HZ6VK;
+				INFOPLIST_FILE = LuscPhotos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LUSC.LuscPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1419AE482151DEBC00EDBA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYJ27HZ6VK;
+				INFOPLIST_FILE = LuscPhotos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LUSC.LuscPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1419AE4A2151DEBC00EDBA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYJ27HZ6VK;
+				INFOPLIST_FILE = LuscPhotosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LUSC.LuscPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuscPhotos.app/LuscPhotos";
+			};
+			name = Debug;
+		};
+		1419AE4B2151DEBC00EDBA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYJ27HZ6VK;
+				INFOPLIST_FILE = LuscPhotosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LUSC.LuscPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuscPhotos.app/LuscPhotos";
+			};
+			name = Release;
+		};
+		1419AE4D2151DEBC00EDBA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYJ27HZ6VK;
+				INFOPLIST_FILE = LuscPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LUSC.LuscPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuscPhotos;
+			};
+			name = Debug;
+		};
+		1419AE4E2151DEBC00EDBA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYJ27HZ6VK;
+				INFOPLIST_FILE = LuscPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LUSC.LuscPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuscPhotos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1419AE152151DEBB00EDBA6B /* Build configuration list for PBXProject "LuscPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1419AE442151DEBC00EDBA6B /* Debug */,
+				1419AE452151DEBC00EDBA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1419AE462151DEBC00EDBA6B /* Build configuration list for PBXNativeTarget "LuscPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1419AE472151DEBC00EDBA6B /* Debug */,
+				1419AE482151DEBC00EDBA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1419AE492151DEBC00EDBA6B /* Build configuration list for PBXNativeTarget "LuscPhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1419AE4A2151DEBC00EDBA6B /* Debug */,
+				1419AE4B2151DEBC00EDBA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1419AE4C2151DEBC00EDBA6B /* Build configuration list for PBXNativeTarget "LuscPhotosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1419AE4D2151DEBC00EDBA6B /* Debug */,
+				1419AE4E2151DEBC00EDBA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1419AE122151DEBB00EDBA6B /* Project object */;
+}
