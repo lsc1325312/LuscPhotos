@@ -1,0 +1,18 @@
+//
+//  LUSCPhotoGroupTableViewCell.h
+//  LuscPhotos
+//
+//  Created by xy on 2018/9/20.
+//  Copyright © 2018年 xy. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface LUSCPhotoGroupTableViewCell : UITableViewCell
+-(void) setTitleName:(NSString*) string;
+-(void) setTitleImage:(UIImage *) image;
+@end
+
+NS_ASSUME_NONNULL_END
